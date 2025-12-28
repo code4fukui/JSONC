@@ -1,4 +1,4 @@
-# Tiny JSONC
+# Tiny JSONC for Deno and browsers
 
 An absurdly small JSONC parser.
 
@@ -6,16 +6,10 @@ This library works simply by using regexes to strip out comments first and trail
 
 If you need additional APIs to manipulate JSONC, better error messages, or a full-blown parser, I'd recommend using [`jsonc-simple-parser`](https://github.com/fabiospampinato/jsonc-simple-parser) instead.
 
-## Install
-
-```sh
-npm install tiny-jsonc
-```
-
 ## Usage
 
 ```ts
-import JSONC from 'tiny-jsonc';
+import JSONC from "https://code4fukui.github.io/JSONC/JSONC.js";
 
 const source = `
   { // This is an example
@@ -30,7 +24,13 @@ const result = {
   bar: [1, 2, 3]
 };
 
-JSONC.parse ( source ); // => returns an object that's deeply equal to `result`
+JSONC.parse(source); // => returns an object that's deeply equal to `result`
+```
+
+## Test
+
+```sh
+deno test
 ```
 
 ## License
