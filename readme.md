@@ -9,7 +9,7 @@ If you need additional APIs to manipulate JSONC, better error messages, or a ful
 ## Usage
 
 ```ts
-import JSONC from "https://code4fukui.github.io/JSONC/JSONC.js";
+import { JSONC } from "https://code4fukui.github.io/JSONC/JSONC.js";
 
 const source = `
   { // This is an example
